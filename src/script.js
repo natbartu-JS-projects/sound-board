@@ -7,8 +7,19 @@ sounds.forEach((sound) => {
   btn.innerText = sound;
 
   btn.addEventListener("click", () => {
+    stopSound();
+
     document.getElementById(sound).play();
   });
 
   document.getElementById("buttons").appendChild(btn);
 });
+
+function stopSound() {
+  sounds.forEach((sound) => {
+    const mp3 = document.getElementById(sound);
+
+    mp3.pause();
+    mp3.currentTime = 0;
+  });
+}
