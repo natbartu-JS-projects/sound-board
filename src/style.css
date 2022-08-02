@@ -20,7 +20,7 @@ body {
 .btn {
   background-color:#585a5f;
   border-radius: 5px;
-  /* border: none; */
+  border: none;
   color: #fff;
   margin: 1rem;
   padding: 1.5rem 3rem;
